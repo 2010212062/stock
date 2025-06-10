@@ -56,7 +56,7 @@ trusted-host = mirrors.aliyun.com" > /etc/pip.conf && \
 
 WORKDIR /data
 #InStock软件
-COPY stock /data/InStock/instock
+COPY instock /data/InStock/instock
 COPY cron/cron.hourly /etc/cron.hourly
 COPY cron/cron.workdayly /etc/cron.workdayly
 COPY cron/cron.monthly /etc/cron.monthly
