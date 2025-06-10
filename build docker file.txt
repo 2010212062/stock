@@ -6,8 +6,9 @@ docker run -dit --name InStock --link=InStockDbService -p 9988:9988 -e db_host=I
 
 
 
-docker run -dit --name InStock --link=InStockDbService -p 9988:9989 -e db_host=InStockDbService mayanghua/instock:latest
+docker run -dit --name InStock --link=InStockDbService -p 9988:9988 -e db_host=InStockDbService mayanghua/instock:latest
 
+docker exec -it InStock bash
 
 docker exec -it stock bash
 
